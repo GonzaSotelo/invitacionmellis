@@ -1,0 +1,23 @@
+{
+  "name": "mellis",
+  "version": "1.0.0",
+  "description": "invitacion al cumpleaños",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaSotelo/cumplemellis.git"
+  },
+  "author": "Gonzalo Sotelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaSotelo/cumplemellis/issues"
+  },
+  "homepage": "https://github.com/GonzaSotelo/cumplemellis#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.1"
+  }
+}
