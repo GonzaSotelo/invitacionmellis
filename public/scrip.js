@@ -37,38 +37,51 @@ var x = setInterval(function() {
 }, 1000);
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var imagenes = document.querySelectorAll(".imagen-1");
 
+  // Función para mezclar el orden de las imágenes
+  function mezclarArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
+  function mostrarImagenes() {
+    var imagenesAleatorias = mezclarArray(Array.from(imagenes)); // Mezclar el orden de las imágenes
 
+    imagenesAleatorias.forEach(function(imagen, index) {
+      setTimeout(function() {
+        imagen.style.opacity = "1";
+        imagen.style.transform = "scale(1)";
+      }, index * 200); // Ajusta el tiempo de retardo según tus preferencias
+    });
+  }
+
+  mostrarImagenes();
+});
 
 
 window.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.enzo_home');
+  var invitacion = document.querySelectorAll('.conte-nombre');
 
-  images.forEach(function(img) {
-    var position = img.getBoundingClientRect();
+  invitacion.forEach(function(inv) {
+    var position = inv.getBoundingClientRect();
 
     // Si la parte superior de la imagen está dentro del área visible de la ventana
     // Agregar la clase 'reveal' para mostrar la imagen
     if (position.top < window.innerHeight) {
-      img.classList.add('reveal');
+      inv.classList.add('reveal-inv');
     }
   });
 });
 
-window.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.pili_home');
 
-  images.forEach(function(img) {
-    var position = img.getBoundingClientRect();
 
-    // Si la parte superior de la imagen está dentro del área visible de la ventana
-    // Agregar la clase 'reveal' para mostrar la imagen
-    if (position.top < window.innerHeight) {
-      img.classList.add('reveal');
-    }
-  });
-});
+
+
 
 window.addEventListener('DOMContentLoaded', function() {
   var images = document.querySelectorAll('.logo-nombre');
