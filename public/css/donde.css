@@ -1,7 +1,7 @@
 
 .seccion-donde{
     width: 100vw;
-    height: 100vh;
+    height: 108vh;
   }
   
   .seccion-donde img {
@@ -11,6 +11,7 @@
     transition: opacity 4s, transform 3s;
     z-index: -1;
     position: relative;
+    margin-top: 16%;
   }
   
   .reveal2 {
