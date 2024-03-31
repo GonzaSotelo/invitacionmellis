@@ -67,26 +67,16 @@
 }
 
 .conte-nombre {
-
-background-color: rgb(255 255 255 / 48%);
-
-box-shadow: 0px 0px 15px 8px rgb(7 0 0 / 100%);
-
-height: 59vh;
-
-width: 85vw;
-
-margin: -191% 0% 0% 5%;
-
-z-index: 1;
-
-border-radius: 29px 0px 29px 0px;
-
-position: relative;
-
-transform: scale(0.01); /* Reduce ligeramente el tamaño */
-
-transition: opacity 16s , transform 13s ;
+background-color: rgb(255 255 255 / 48%);
+box-shadow: 0px 0px 15px 8px rgb(7 0 0 / 100%);
+height: 59vh;
+width: 85vw;
+margin: -200% 0% 0% 5%;
+z-index: 1;
+border-radius: 29px 0px 29px 0px;
+position: relative;
+transform: scale(0.01); /* Reduce ligeramente el tamaño */
+transition: opacity 16s , transform 13s;
 }
 
 .reveal-inv {
@@ -114,9 +104,9 @@ transition: opacity 16s , transform 13s ;
 
 @media only screen and (max-width: 768px) {
   .conte-nombre {
-    height: 80vh;
-    width: 90vw;
-    margin: 10% auto;
+    /* height: 38vh; */
+    /* width: 90vw; */
+    /* margin: 10% auto; */
   }
 }
 
